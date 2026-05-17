@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-left">
+
+        <h1 class="hero-title">Welcome to DHK Facility Management Services</h1>
+        <p class="tagline">
+            Your Trusted Partner in Manpower & Facility Solutions Across Tamil Nadu
+        </p>
+
+        <p class="hero-description">
+            At DHK FMS, we provide reliable, compliant, and performance-driven manpower solutions
+            that help organizations operate smoothly and efficiently. From housekeeping and security
+            to office assistants and drivers, we deliver skilled and unskilled workforce tailored to
+            your operational needs.
+        </p>
+
+        <p class="hero-description">
+            Since 2020, we have been supporting businesses across Tamil Nadu with disciplined personnel,
+            transparent payroll management, and strict statutory compliance under Labour Contract Act,
+            ESI, and PF regulations.
+        </p>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="{{ url_for('static', filename='images/background.png') }}" class="hero-img">
+    </div>
+</section>
+
+<section class="why-choose hidden">
+    <div class="why-container">
+
+        <div class="why-image">
+            <img src="{{ url_for('static', filename='images/choose.png') }}" alt="Why Choose DHK">
+        </div>
+
+        <div class="why-text">
+            <h2>Why Choose DHK FMS?</h2>
+            <ul>
+                <li>✔ Skilled & Verified Manpower</li>
+                <li>✔ 100% Statutory Compliance (ESI & PF Registered)</li>
+                <li>✔ Timely Salary Disbursement Through Bank Transfer</li>
+                <li>✔ Customized Workforce Solutions</li>
+                <li>✔ Professional Supervision & Management</li>
+                <li>✔ 24×7 Client Support</li>
+            </ul>
+
+            <p class="highlight-line">
+                We don’t just supply manpower — we build long-term workforce partnerships.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="services-home hidden">
+    <div class="services-container">
+
+        <div class="services-text">
+            <h2>Our Services at a Glance</h2>
+
+            <ul>
+                <li><strong>Housekeeping Services</strong> – Professional cleaning and maintenance for corporate
+                    offices, hospitals, hotels, IT parks, retail spaces, and industrial units.</li>
+
+                <li><strong>Security Services</strong> – Trained security personnel for commercial, residential,
+                    educational, and industrial sectors.</li>
+
+                <li><strong>Office Assistants & Data Entry Operators</strong> – Reliable administrative and operational
+                    support staff.</li>
+
+                <li><strong>Loading & Unloading Manpower</strong> – Efficient material handling support for logistics
+                    and warehousing operations.</li>
+
+                <li><strong>Drivers & Support Staff</strong> – Heavy vehicle, light vehicle, and car drivers along with
+                    cleaners.</li>
+            </ul>
+        </div>
+
+        <div class="services-image">
+            <img src="{{ url_for('static', filename='images/services.png') }}" alt="Our Services">
+        </div>
+
+    </div>
+</section>
+<section class="commitment hidden">
+    <div class="commitment-container">
+
+        <div class="commitment-image">
+            <img src="{{ url_for('static', filename='images/commit.png') }}" alt="Our Commitment">
+        </div>
+
+        <div class="commitment-text">
+            <h2>Our Commitment</h2>
+
+            <p>
+                At DHK FMS, we believe that the right workforce is the backbone of every successful organization.
+            </p>
+
+            <ul>
+                <li>Transparent operations</li>
+                <li>Proper documentation and compliance</li>
+                <li>Professional workforce deployment</li>
+                <li>Continuous supervision and quality control</li>
+            </ul>
+
+            <p class="highlight-line">Your growth is our responsibility.</p>
+        </div>
+
+    </div>
+</section>
+<section class="cta-home">
+    <h2>Let’s Build a Strong Workforce Together</h2>
+    <p>
+        Whether you require short-term manpower support or long-term facility management solutions,
+        DHK FMS is ready to serve you with dedication and professionalism.
+    </p>
+
+    <p><strong>📞 Contact us today to discuss your manpower requirements.</strong></p>
+</section>
+
+{% endblock %}

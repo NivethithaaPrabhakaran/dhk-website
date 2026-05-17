@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="service-page">
+
+    <div class="service-header">
+        <h1>Security Personnel</h1>
+       </div>
+
+    <div class="service-content">
+
+        <div class="service-text">
+            <p>
+                DHK FMS provides trained and reliable security personnel for a wide range of sectors, including: Educational
+                institutions, Industrial units, Residential complexes, Restaurant, Commercial buildings.
+                We also offer:
+            </p>
+            <ul>
+                <li>Personal security services</li>
+                <li>Event and crowd management security</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/security.png') }}" class="service-img">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ABOUT PAGE MAIN TITLE -->
+<section class="about-page">
+    <h1 class="page-main-title">ABOUT US</h1>
+</section>
+
+<!-- 1️⃣ COMPANY PROFILE -->
+<section class="page-section" id="company">
+    <h2>Company Profile</h2>
+    <p>
+        DHK FMS commenced its operations in Chennai in 2020 and has since grown into a reliable provider of
+        comprehensive
+        manpower and facility management services across Tamil Nadu. We specialize in supplying skilled and unskilled
+        manpower
+        to support both commercial and domestic operations.
+    </p>
+
+    <p>
+        Our service portfolio includes office assistants, data entry operators, loaders (loading and unloading of
+        goods),
+        housekeeping staff, heavy and light vehicle drivers, car drivers, security personnel, and other support staff.
+        Organizations across Tamil Nadu require dependable manpower to manage essential operational functions.
+    </p>
+
+    <p>
+        DHK FMS partners with such organizations by delivering efficient, compliant, and scalable manpower solutions
+        tailored to their
+        operational needs.
+    </p>
+
+    <p>
+        Our commitment, professionalism, and client-focused approach have enabled us to establish a strong presence in a
+        short
+        span of time. DHK FMS is duly registered under the State Labour Contract Act and holds valid ESI and PF
+        registrations.
+    </p>
+</section>
+
+<!-- 2️⃣ MISSION, VISION & OUR STRENGTH -->
+<section class="page-section" id="mission">
+
+    <!-- VISION -->
+    <div class="vision-container">
+
+        <div class="vision-text">
+            <h3>Vision</h3>
+
+            <p>
+                To become a market leader in manpower and facility management services
+                by consistently enhancing client productivity and operational efficiency.
+            </p>
+        </div>
+
+        <div class="vision-image">
+            <img src="{{ url_for('static', filename='images/vision.png') }}">
+        </div>
+
+    </div>
+
+    <!-- MISSION -->
+<div class="mission-container">
+
+    <div class="mission-image">
+        <img src="{{ url_for('static', filename='images/mission2.png') }}" alt="Mission">
+    </div>
+    <div class="mission-text">
+
+    <div class="mission-section">
+        <h3>Mission</h3>
+
+        <ul class="mission-list">
+            <li>To deliver high-quality manpower services aligned with client requirements.</li>
+
+            <li>To deploy trained, reliable, and efficient personnel across all service categories.</li>
+
+            <li>To provide customized workforce solutions based on the unique needs of each client.</li>
+
+            <li>To follow a customer-centric approach with 24×7 support from planning to execution.</li>
+        </ul>
+    </div>
+
+    <!-- STRENGTH -->
+    <div class="strength-section">
+
+        <h3>Our Strength</h3>
+
+        <ul class="strength-list">
+            <li>Supply of skilled and unskilled manpower tailored to business requirements</li>
+
+            <li>Enhancement of client productivity through efficient workforce deployment</li>
+
+            <li>Strict compliance with statutory labour laws and regulations</li>
+
+            <li>Maintenance of accurate and up-to-date employee records</li>
+
+            <li>Timely and transparent salary payments</li>
+
+            <li>Deployment of honest, disciplined, and professionally trained personnel</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- 3️⃣ OUR CLIENTS -->
+<section class="page-section" id="clients">
+    <h2>Our Clients</h2>
+
+    <p>
+        We proudly serve corporate offices, hospitals, hotels, IT parks, retail chains,
+        warehouses, and industrial establishments across Tamil Nadu.
+    </p>
+
+    <div class="clients">
+    
+        <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjin-Tlk8CUAxXDwjwCHRDlLxcYACICCAEQABoCc2Y&ae=2&co=1&ase=2&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU_tH_4CqoPsrIhhxXf9z5HcBDdFVddYxTu89k65Z5XhCw6JFaLLWCsaAsnzEALw_wcB&cid=CAAS0wHkaI_guP3vCiNBmK9ajimLg8qYpXSXuQxiYatF7cLN8LsIHD7zxobVu1uYdDXmFqXrD0T6_cF64sjBgA6UaCTn4Un8wNlQF8NjXKnpjsllZBYRfaPoQ9UhzbhtaBS9aUpfIFUmsf3Gso3Pk_thpCGVg4XCLiOLoFxcpqxytFg0jXSGtJPxm-fr3HuhmZhCEsylJccbiYI1qv2pk38H_bUTouazluEVwNIkPbasXfqZ71wvxICgK0EGhYZc04g97kGaD0dm00-g06ZdP_a1kB1FBYFy&cce=2&category=acrcp_v1_71&sig=AOD64_0BKtRH9251oxfrh8g20bt-etETkA&q&nis=4&adurl&ved=2ahUKEwiMqd3lk8CUAxWzRmwGHY3mLA8Q0Qx6BAgrEAE" target="_blank">
+            <img src="{{ url_for('static', filename='images/client1.jpeg') }}" alt="Client 1">
+        </a>
+    
+        <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjandGllMCUAxUNkGYCHd4MA4QYACICCAEQARoCc20&ae=2&co=1&ase=2&gclid=Cj0KCQjwzqXQBhD2ARIsAKrIeU84Ev5FZN6D9moVncHvnP4bKkLUqZh5p_Zm6Q4CcGsZJNEnitI_ax4aAmnREALw_wcB&cid=CAAS0wHkaLZ0gJYrYlM_AQDxkFBvg3HPvktV5tbS3AovHD5clWiQHUkTkKiSjFYp4CJGn6X55ZaO-2HJcup-9Cer2jLp0N8YIioiJE1sEYkl_jjimxk8KEDEX3KAHOvqpPLu5ls-yevKyTP-NCrHsanbiUB34X_n5Cb1FdEG7BcBcOfWcqFJ6H45pbUI3tYVbHZwnS8j09hTVhX-R2ptR1Plu3tMQx5STnZi9jqNKcDw955rr-SNXhhNl_BLS4Q78sjhr0lpAdp-0ZqCY_616-YNB7XWRx3D&cce=2&category=acrcp_v1_71&sig=AOD64_279k2u_pFTSIqOA44ytJlzCIL4Vw&q&nis=4&adurl&ved=2ahUKEwipmsqllMCUAxXnS2wGHVzVCIkQ0Qx6BAgSEAE" target="_blank">
+            <img src="{{ url_for('static', filename='images/client2.jpeg') }}" alt="Client 2">
+        </a>
+    
+        <a href="https://www.pridehotel.com/" target="_blank">
+            <img src="{{ url_for('static', filename='images/client3.jpeg') }}" alt="Client 3">
+        </a>
+    
+        <a href="https://kuppanna.com/" target="_blank">
+            <img src="{{ url_for('static', filename='images/client4.jpeg') }}" alt="Client 4">
+        </a>
+    
+        <a href="https://www.pansaucepoetry.in/" target="_blank">
+            <img src="{{ url_for('static', filename='images/client5.jpeg') }}" alt="Client 5">
+        </a>
+    
+        <a href="https://www.wallajah.com/" target="_blank">
+            <img src="{{ url_for('static', filename='images/client6.jpeg') }}" alt="Client 6">
+        </a>
+    
+        <a href="https://www.hoteljpchennai.com/" target="_blank">
+            <img src="{{ url_for('static', filename='images/client7.jpg') }}" alt="Client 7">
+        </a>
+    
+    </div>
+</section>
+
+{% endblock %}

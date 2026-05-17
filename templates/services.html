@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+    <h1>Our Services</h1>
+
+    <div class="service-box">
+        <img src="{{ url_for('static', filename='images/picture1.png') }}">
+        <h3>Housekeeping Services</h3>
+        <p>Professional housekeeping staff for corporate and residential needs.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="{{ url_for('static', filename='images/picture2.png') }}">
+        <h3>Security Services</h3>
+        <p>Trained and reliable security personnel for complete safety.</p>
+    </div>
+
+    <div class="service-box">
+        <img src="{{ url_for('static', filename='images/picture3.png') }}">
+        <h3>Maintenance Services</h3>
+        <p>Electrical, plumbing, and facility maintenance support.</p>
+    </div>
+
+</section>
+{% endblock %}

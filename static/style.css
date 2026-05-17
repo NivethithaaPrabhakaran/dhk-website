@@ -1,0 +1,517 @@
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+p {
+    font-weight: 400;
+}
+/* ===== GLOBAL STYLES ===== */
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville', sans-serif;
+    background: linear-gradient(to right, #f2f4f5, #ffffff);
+    color: #000205;
+    padding-top: 80px;
+    /* 👈 Important */
+}
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #b6c5e6;
+
+    padding: 15px 60px;
+    box-sizing: border-box;
+    /* 🔥 IMPORTANT FIX */
+    z-index: 1000;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+    color: rgb(2, 2, 2);
+}
+
+.logo {
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a1abb0;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #1e293b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f5f9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== HERO SECTION ===== */
+/* ===== HERO TEXT ANIMATION ===== */
+.hero-title {
+    font-family: 'Libre Baskerville' serif;
+    font-weight: bold;
+    font-size: 42px;
+    /* adjust if you want bigger */
+}
+.hero-left {
+    animation: slideLeft 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0 60px 100px;
+    /* remove right padding */
+    gap: 40px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+/* ===== HERO IMAGE ANIMATION ===== */
+
+.hero-right {
+    animation: slideRight 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.hero-description {
+    line-height: 2.0;
+    /* 👈 This gives 2.0 line spacing */
+    margin-bottom: 20px;
+}
+/* ===== PAGE SECTION (General Content Pages) ===== */
+.page-section {
+    padding: 40px 80px;
+    text-align: left;
+}
+
+.page-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.page-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    padding: 40px 80px;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== MISSION LIST ===== */
+.mission-list {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.mission-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== STRENGTH LIST ===== */
+.strength-list {
+    margin-top: 15px;
+}
+
+.strength-list ul {
+    padding-left: 25px;
+}
+
+.strength-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== SERVICE PAGE LAYOUT ===== */
+.service-header {
+    text-align: center;
+    margin-top: 40px;
+}
+.service-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-text {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.service-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.service-img {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SERVICE BOX (If Used) ===== */
+.service-box {
+    margin: 40px auto;
+    width: 70%;
+    background: linear-gradient(to right, #ffffff, #f1f5f9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.03);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: white;
+    margin-top: 40px;
+}
+/* ===== HOME BOTTOM GALLERY ===== */
+.home-bottom-gallery {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery-container img {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+}
+/* WHY CHOOSE SECTION */
+.why-container,
+.commitment-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 100px;
+}
+
+.why-image,
+.commitment-image {
+    flex: 1;
+}
+
+.why-image img,
+.commitment-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.why-text,
+.commitment-text {
+    flex: 1;
+}
+
+.why-text ul,
+.commitment-text ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.highlight-line {
+    margin-top: 20px;
+    font-weight: 600;
+}
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 100px;
+}
+
+.services-text {
+    flex: 1;
+}
+
+.services-text ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.services-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.services-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+/* ===== SCROLL ANIMATION ===== */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1.5s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ===== ABOUT PAGE DROPDOWN ===== */
+
+.about-page {
+    padding: 100px 100px 60px 100px;
+}
+
+.page-main-title {
+    margin-bottom: 40px;
+}
+
+.about-dropdown {
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #b6c5e6;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.about-content {
+    display: none;
+    padding: 20px;
+    background-color: #f1f5f9;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.about-content p,
+.about-content ul {
+    line-height: 1.6;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.page-section {
+    scroll-margin-top: 100px;
+    /* prevents content hiding behind navbar */
+    padding: 60px 80px;
+}
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.clients img {
+    width: 140px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.clients img:hover {
+    transform: scale(1.05);
+}
+.vision-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.vision-text {
+    width: 45%;
+    line-height: 1.8;
+}
+
+.vision-image img {
+    width: 350px;
+    border-radius: 12px;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.mission-image img {
+    width: 450px;
+    height: auto;
+}
+
+.mission-text {
+    width: 50%;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+}
+
+.contact-text {
+    width: 45%;
+    line-height: 1.8;
+}
+
+.contact-image img {
+    width: 450px;
+    border-radius: 12px;
+}

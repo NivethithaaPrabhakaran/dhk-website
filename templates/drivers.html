@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="service-page">
+
+    <div class="service-header">
+        <h1>Vehicle Driver Services</h1>
+        <p>Experienced and Licensed Drivers</p>
+    </div>
+
+    <div class="service-content">
+    
+        <div class="service-text">
+            <p>
+                We supply experienced and trained drivers and cleaners
+                to meet transportation and logistics requirements.
+            </p>
+            <h3>Driver Services Include:</h3>
+            <ul>
+                <li>Heavy vehicle drivers</li>
+                <li>Light commercial vehicle drivers</li>
+                <li>Car, van, and utility vehicle drivers</li>
+            </ul>
+            <p>
+                All drivers are selected based on experience, discipline, and adherence to safety standards.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/Drivers.png') }}" class="service-img">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    
+    </div>
+    
+    </section>
+    {% endblock %}

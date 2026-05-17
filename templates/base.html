@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHK FACILITY MANAGEMENT SERVICES</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&family=Libre+Baskerville&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo-section">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+           </div>
+
+<nav>
+    <a href="/">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">About </button>
+        <div class="dropdown-content">
+            <a href="/about#company">Company Profile</a>
+            <a href="/about#mission">Mission, Vision & Our Strength</a>
+            <a href="/about#clients">Our Clients</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Services </button>
+        <div class="dropdown-content">
+            <a href="/housekeeping">Housekeeping</a>
+            <a href="/loaders">Loaders</a>
+            <a href="/office-assistants">Office Assistants</a>
+            <a href="/security">Security Personnel</a>
+            <a href="/drivers and cleaners">Vehicle Drivers and cleaners</a>
+            </div>
+    </div>
+
+    <a href="/contact">Contact</a>
+</nav>
+
+    </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer>
+    <p>© 2026 DHK Facility Management Services. All Rights Reserved.</p>
+</footer>
+<script>
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+</script>
+<script>
+    const buttons = document.querySelectorAll('.about-btn');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="service-page">
+
+    <div class="service-header">
+        <h1>Housekeeping Services</h1>
+        <p>Professional and Reliable Cleaning Workforce Solutions</p>
+    </div>
+
+    <div class="service-content">
+
+        <div class="service-text">
+                <p>
+                    A clean and well-maintained environment is essential for creating a positive brand image and ensuring workplace
+                    efficiency. DHK FMS provides professional housekeeping services to a wide range of sectors, including:
+                </p>
+                <ul>
+                    <li>Corporate offices </li>
+                    <li>Hospitals</li>
+                    <li>Hotels</li>
+                    <li>IT parks</li>
+                    <li>Retail establishments</li>
+                    <li>Industrial facilities</li>
+                </ul>
+                
+                <p>
+                
+                    We also deploy experienced housekeeping supervisors who oversee operations, manage staff performance, and ensure
+                    smooth
+                    and efficient service delivery.
+                
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+        </div>
+
+        <div class="service-image">
+            <img src="{{ url_for('static', filename='images/housekeeping.png') }}" class="service-img">
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}
