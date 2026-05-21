@@ -118,7 +118,7 @@ nav a,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0 60px 100px;
+    padding: 0px 0 60px 100px;
     /* remove right padding */
     gap: 40px;
 }
