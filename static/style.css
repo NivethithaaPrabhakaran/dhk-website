@@ -19,20 +19,27 @@ body {
     /* 👈 Important */
 }
 /* ===== NAVBAR ===== */
-.navbar {
-    nav ul {
-            display: flex;
-            gap: 25px;
-            list-style: none;
-        }
-    
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-size: 20px;
-        }
-    /* 🔥 IMPORTANT FIX */
-    z-index: 1000;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #d8def0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: 'Times New Roman', serif;
 }
 .logo-section {
     display: flex;
