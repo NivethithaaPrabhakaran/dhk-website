@@ -118,7 +118,7 @@ nav a,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 60px 100px;
+    padding: 20 0 60px 100px;
     /* remove right padding */
     gap: 40px;
 }
@@ -673,7 +673,7 @@ a {
 }
 /* Remove gap between navbar and hero section */
 .hero {
-    margin-top: 0;
+    margin-top: 20;
     padding-top: 0;
     align-items: flex-start;
     /* important */
