@@ -12,58 +12,44 @@ p {
 /* ===== GLOBAL STYLES ===== */
 body {
     margin: 0;
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     background: linear-gradient(to right, #f2f4f5, #ffffff);
     color: #000205;
-    padding-top: 80px;
-    /* 👈 Important */
 }
+    /* 👈 Important */
+
 /* ===== NAVBAR ===== */
 header {
+    background-color: #d8def0;
+    padding: 10px 50px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background-color: #d8def0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-    font-family: 'Times New Roman', serif;
-}
-.logo-section {
-    display: flex;
-    align-items: right;
-    color: rgb(2, 2, 2);
 }
 
 .logo {
-    height: 60px;
-    margin-right: 10px;
+    height: 80px;
 }
 
-nav a {
-    color: rgb(0, 0, 0);
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a,
+.dropbtn {
     text-decoration: none;
-    margin-left: 25px;
-    font-size: 16px;
-    transition: 0.3s;
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
-
-nav a:hover {
-    color: #a1abb0;
-}
-
 /* ===== DROPDOWN ===== */
 .dropdown {
     position: relative;
@@ -73,8 +59,9 @@ nav a:hover {
 .dropbtn {
     background: transparent;
     border: none;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
     cursor: pointer;
 }
 
