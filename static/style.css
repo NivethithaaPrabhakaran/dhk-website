@@ -235,11 +235,11 @@ nav a,
     flex: 1;
     font-size: 18px;
     line-height: 1.8;
-    text-align: center;
-}
-.service-text h1 {
+    }
+.service-header h1 {
     text-align: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .service-image,
