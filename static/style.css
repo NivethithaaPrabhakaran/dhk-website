@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, sans-serif;
+}
 h1,
 h2,
 h3 {
@@ -17,19 +20,17 @@ body {
 }
 /* ===== NAVBAR ===== */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #b6c5e6;
-
-    padding: 15px 60px;
-    box-sizing: border-box;
+    nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+    
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
     /* 🔥 IMPORTANT FIX */
     z-index: 1000;
 }
@@ -514,4 +515,18 @@ html {
 .contact-image img {
     width: 450px;
     border-radius: 12px;
+}
+.service-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+a {
+    text-decoration: none;
+    color: blue;
 }
