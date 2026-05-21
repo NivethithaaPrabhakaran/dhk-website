@@ -235,6 +235,11 @@ nav a,
     flex: 1;
     font-size: 18px;
     line-height: 1.8;
+    text-align: center;
+}
+.service-text h1 {
+    text-align: center;
+    width: 100%;
 }
 
 .service-image,
@@ -423,17 +428,7 @@ a {
     .commitment-image img {
         max-width: 300px;
     }
-        /* SERVICE PAGE HEADINGS */
-    
-        .service-header,
-        .page-section h1,
-        .service-text h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-                .service-text {
-                    width: 100%;
-                }
+       
 
     .page-section h2,
     .about-section h2 {
