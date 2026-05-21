@@ -324,7 +324,7 @@ footer {
     padding: 20px;
     background-color: #0f172a;
     color: white;
-    margin-top: 40px;
+    margin-top: auto;
 }
 
 /* ===== SCROLL ANIMATION ===== */
@@ -451,4 +451,15 @@ a {
         font-size: 14px;
         padding: 15px;
     }
+}
+/* Fix footer bottom space */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
 }
