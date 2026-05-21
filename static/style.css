@@ -43,7 +43,7 @@ nav a {
 }
 .logo-section {
     display: flex;
-    align-items: center;
+    align-items: right;
     color: rgb(2, 2, 2);
 }
 
