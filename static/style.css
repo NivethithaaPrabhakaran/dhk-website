@@ -524,3 +524,115 @@ a {
     text-decoration: none;
     color: blue;
 }
+/* ===== MOBILE VIEW ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a,
+    .dropbtn {
+        font-size: 16px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* GENERAL SECTIONS */
+    .page-section,
+    .about-section,
+    .about-page {
+        padding: 40px 20px;
+    }
+
+    /* SERVICE SECTIONS */
+    .service-content,
+    .services-container,
+    .why-container,
+    .commitment-container,
+    .vision-container,
+    .mission-container,
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .service-text,
+    .services-text,
+    .vision-text,
+    .mission-text,
+    .contact-text {
+        width: 100%;
+    }
+
+    .service-image,
+    .services-image,
+    .vision-image,
+    .mission-image,
+    .contact-image {
+        width: 100%;
+    }
+
+    .service-image img,
+    .services-image img,
+    .vision-image img,
+    .mission-image img,
+    .contact-image img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* CLIENT LOGOS */
+    .clients img {
+        width: 100px;
+    }
+
+    /* GALLERY */
+    .gallery-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
